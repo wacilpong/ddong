@@ -28,7 +28,7 @@ function move() {
 }
 
 function select(e) {
-  if (e.keyCode !== 32) return;
+  if (e.keyCode !== 32 && e.type !== "click") return;
 
   poop();
   clearInterval(interval);
