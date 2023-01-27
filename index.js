@@ -37,6 +37,7 @@ function select(e) {
   if (currentIndex >= types.length) {
     window.onkeydown = null;
     window.onclick = null;
+    window.ontouchend = null;
     render();
     return;
   }
@@ -72,4 +73,5 @@ function render() {
 
 window.onkeydown = select;
 window.onclick = select;
+window.ontouchend = select;
 window.onload = move;
