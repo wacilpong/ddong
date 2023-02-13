@@ -64,11 +64,7 @@ function render() {
   const resultElem = document.querySelector(".result");
 
   resultElem.style.display = "block";
-  textElem.innerHTML = `
-        <h3>색깔은 ${result[0]}</h3>
-        <h3>크기는 ${result[1]}</h3>
-        <h3>모양은 ${result[2]}</h3>
-    `;
+  textElem.innerHTML = `<h3>${result[0]} ${result[1]} ${result[2]}</h3>`;
 }
 
 window.onkeydown = select;
